@@ -23,7 +23,7 @@
     <header class="jumbotron jumbotron-fluid">
         <header>
             <div class="container">
-                <div class="row row-content align-items-center">
+                <div class="row align-items-center">
                     <div class="col-4 col-sm-3 col-md-2 align-self-center">
                         <img src="img/logo.png" class="img-fluid" />
                     </div>
@@ -62,17 +62,17 @@
     </nav>
 
     <!---------------------------TASK 2 ------------------------------------->
-
-    <div class="container">
+    
     	<div class="row align-items-center row-content" id="reserveForm">
     		<div class="col-sm-6 mx-auto">
     			<div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form>
-                        	<div class="row form form-group">
-                        		<label class="col-sm-6" for="nuCampers">Number of Campers</label>
-                        			<select class="form-control col-sm-5" name="nuCampers" id="nuCampers">
+                        	<div class="row form-group">
+                                <label class="col-sm-6" for="nuCampers">Number of Campers</label>
+                            <div class="col">
+                        			<select class="form-control" name="nuCampers" id="nuCampers">
                         				<option value="select">select...</option>
                         				<option value="1">1</option>
                         				<option value="2">2</option>
@@ -80,13 +80,21 @@
                         				<option value="4">4</option>
                         				<option value="5">5</option>
                         				<option value="6">6</option>
-                        			</select>
+                                    </select>
+                            </div>
                         	</div>
-                        	<div class="row form">
-                        		<label class="col-sm-6" for="date">Date</label>
-                          		<input type="text" id="date" placeholder="mm/dd/yyyy" class="form-control col-sm-5">
-                        	</div>
-                        	<button type="submit" class="btn btn-primary mt-3 ">Search</button>
+                        	<div class="row form-group">
+                                <label class="col-sm-6" for="date">Date</label>
+                                <div class="col">
+                                  <input type="date" id="date" placeholder="mm/dd/yyyy" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary ">Search</button>
+                            </div>
+                            </div>
+                        	
                         </form>
                     </div>
                 </div>
@@ -94,8 +102,9 @@
 
     	</div>
 
-    </div>
-<!---------------------------TASK 2 ------------------------------------->
+    
+
+    <!---------------------------TASK 2 ------------------------------------->
 
     <div class="container">
         <div class="row row-content align-items-center">
