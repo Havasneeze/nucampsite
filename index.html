@@ -32,12 +32,71 @@
                         <h2>a better way to camp</h2>
                     </div>
                     <div class="col col-md-4 col-xl-2 order-sm-last text-sm-right">
-                        <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                        <button type="button" class="btn btn-lg bg-info text-white mt-4" data-toggle="modal" data-target="#reserveModal">Reserve Campsite
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
     </header>
+
+    <!------------------------------Reserve Modal---------------------------------->
+
+    <div class="modal fade bd-example-modal-lg" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h3 class="modal-title">Reserve a Campsite</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="row form-group">
+                            <label class="col-sm-6" for="nuCampers">Number of Campers</label>
+                        <div class="col">
+                                <select class="form-control" name="nuCampers" id="nuCampers">
+                                    <option value="select">select...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                        </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6" for="date">Date</label>
+                            <div class="col">
+                              <input type="date" id="date" placeholder="mm/dd/yyyy" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary ">Search</button>
+                        </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <!------------------------------Reserve Modal---------------------------------->
+
+
+
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -103,8 +162,6 @@
             </div>
         </div>
     </div>
-
-    <!---------------------------TASK 2 ------------------------------------->
     
     	<div class="row align-items-center row-content" id="reserveForm">
     		<div class="col-sm-6 mx-auto">
@@ -144,10 +201,6 @@
     		</div>
 
     	</div>
-
-    
-
-    <!---------------------------TASK 2 ------------------------------------->
 
     <div class="container">
 
@@ -194,24 +247,6 @@
 
             </div>
         </div> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
 
 
         <div class="row row-content align-items-center">
@@ -309,13 +344,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-
-
+  
 </body>
 
 </html>
